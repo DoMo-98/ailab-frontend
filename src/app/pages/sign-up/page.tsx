@@ -10,7 +10,7 @@ import {
 	Chip,
 } from "@mui/material";
 import Divider from "@mui/material/Divider";
-import { GoogleIcon } from "../components/icons/google-icon";
+import { GoogleIcon } from "../../components/icons/google-icon";
 import Link from "next/link";
 
 const SignUp: React.FC = () => {
@@ -80,7 +80,7 @@ const SignUp: React.FC = () => {
 						Already have an account?{" "}
 						<span>
 							<Link
-								href="/sign-in"
+								href="/pages/sign-in"
 								style={{ alignSelf: "center" }}
 							>
 								Sign in

@@ -10,10 +10,10 @@ import {
 	Chip,
 } from "@mui/material";
 import Divider from "@mui/material/Divider";
-import { GoogleIcon } from "../components/icons/google-icon";
+import { GoogleIcon } from "../../components/icons/google-icon";
 import Link from "next/link";
 
-const LoginPage: React.FC = () => {
+const SignIn: React.FC = () => {
 	return (
 		<Container component="main" maxWidth="xs">
 			<Box
@@ -25,7 +25,7 @@ const LoginPage: React.FC = () => {
 				}}
 			>
 				<Typography component="h1" variant="h5">
-					Iniciar Sesión
+					Sign in
 				</Typography>
 				{/* <Box
 					component="form"
@@ -44,7 +44,7 @@ const LoginPage: React.FC = () => {
 						required
 						fullWidth
 						id="email"
-						label="Correo Electrónico"
+						label="Email"
 						name="email"
 						autoComplete="email"
 						autoFocus
@@ -54,7 +54,7 @@ const LoginPage: React.FC = () => {
 						required
 						fullWidth
 						name="password"
-						label="Contraseña"
+						label="Password"
 						type="password"
 						id="password"
 						autoComplete="current-password"
@@ -71,7 +71,7 @@ const LoginPage: React.FC = () => {
 						Don&apos;t have an account?{" "}
 						<span>
 							<Link
-								href="/sign-up"
+								href="/pages/sign-up"
 								style={{ alignSelf: "center" }}
 							>
 								Sign up
@@ -109,4 +109,4 @@ const LoginPage: React.FC = () => {
 	);
 };
 
-export default LoginPage;
+export default SignIn;
