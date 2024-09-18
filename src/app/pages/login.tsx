@@ -10,7 +10,7 @@ import {
 	Chip,
 } from "@mui/material";
 import Divider from "@mui/material/Divider";
-import { GoogleIcon } from "../components/sign-in/CustomIcons";
+import { GoogleIcon } from "../components/icons/google-icon";
 import Link from "next/link";
 
 const LoginPage: React.FC = () => {
