@@ -110,7 +110,7 @@ const SignUp: React.FC = () => {
 						// onClick={() => alert("Sign in with Google")}
 						startIcon={<GoogleIcon />}
 					>
-						Sign in with Google
+						Sign up with Google
 					</Button>
 				</Box>
 			</Box>
