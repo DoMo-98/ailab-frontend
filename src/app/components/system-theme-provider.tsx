@@ -5,11 +5,11 @@ import { ThemeProvider, createTheme, Theme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-interface ThemeProviderClientProps {
+interface SystemThemeProviderProps {
 	children: React.ReactNode;
 }
 
-const ThemeProviderClient: React.FC<ThemeProviderClientProps> = ({
+const SystemThemeProvider: React.FC<SystemThemeProviderProps> = ({
 	children,
 }) => {
 	const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -32,4 +32,4 @@ const ThemeProviderClient: React.FC<ThemeProviderClientProps> = ({
 	);
 };
 
-export default ThemeProviderClient;
+export default SystemThemeProvider;
