@@ -13,7 +13,7 @@ import Divider from "@mui/material/Divider";
 import { GoogleIcon } from "../../components/icons/google-icon";
 import Link from "next/link";
 
-const SignIn: React.FC = () => {
+const SignUp: React.FC = () => {
 	return (
 		<Container component="main" maxWidth="xs">
 			<Box
@@ -25,7 +25,7 @@ const SignIn: React.FC = () => {
 				}}
 			>
 				<Typography component="h1" variant="h5">
-					Sign in
+					Sign up
 				</Typography>
 				{/* <Box
 					component="form"
@@ -43,11 +43,20 @@ const SignIn: React.FC = () => {
 						margin="normal"
 						required
 						fullWidth
+						id="username"
+						label="Username"
+						name="username"
+						autoComplete="username"
+						autoFocus
+					/>
+					<TextField
+						margin="normal"
+						required
+						fullWidth
 						id="email"
 						label="Email"
 						name="email"
 						autoComplete="email"
-						autoFocus
 					/>
 					<TextField
 						margin="normal"
@@ -65,16 +74,16 @@ const SignIn: React.FC = () => {
 						variant="contained"
 						sx={{ mt: 3, mb: 2 }}
 					>
-						Iniciar Sesión
+						Sign Up
 					</Button>
 					<Typography sx={{ textAlign: "center" }}>
-						Don&apos;t have an account?{" "}
+						Already have an account?{" "}
 						<span>
 							<Link
-								href="/pages/sign-up"
+								href="/auth/sign-in"
 								style={{ alignSelf: "center" }}
 							>
-								Sign up
+								Sign in
 							</Link>
 						</span>
 					</Typography>
@@ -109,4 +118,4 @@ const SignIn: React.FC = () => {
 	);
 };
 
-export default SignIn;
+export default SignUp;
