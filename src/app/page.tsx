@@ -1,8 +1,9 @@
 // import Image from "next/image";
 // import styles from "./page.module.css";
 
-import SignIn from "./pages/sign-in/page";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-	return <SignIn />;
+	redirect("/auth/sign-in");
+	// return <SignIn />;
 }
