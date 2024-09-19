@@ -4,6 +4,12 @@
 import { redirect } from "next/navigation";
 
 export default function Home() {
-	redirect("/auth/sign-in");
-	// return <SignIn />;
+	if (true) {
+		redirect("/auth/sign-in");
+	}
+	return (
+		<div>
+			<h1>Home</h1>
+		</div>
+	);
 }
