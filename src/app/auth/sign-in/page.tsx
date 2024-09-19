@@ -65,7 +65,7 @@ const SignIn: React.FC = () => {
 						variant="contained"
 						sx={{ mt: 3, mb: 2 }}
 					>
-						Iniciar Sesión
+						Sign in
 					</Button>
 					<Typography sx={{ textAlign: "center" }}>
 						Don&apos;t have an account?{" "}
