@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import {
 	TextField,
@@ -10,8 +8,9 @@ import {
 	Chip,
 } from "@mui/material";
 import Divider from "@mui/material/Divider";
-import { GoogleIcon } from "../../components/icons/google-icon";
+import { GoogleIcon } from "@/app/components/icons/google-icon";
 import Link from "next/link";
+import { signin } from "./actions";
 
 const SignIn: React.FC = () => {
 	return (
@@ -38,7 +37,7 @@ const SignIn: React.FC = () => {
 						gap: 2,
 					}}
 				> */}
-				<Box component="form" sx={{ mt: 1 }}>
+				<Box component="form" action={signin} sx={{ mt: 1 }}>
 					<TextField
 						margin="normal"
 						required
@@ -47,7 +46,6 @@ const SignIn: React.FC = () => {
 						label="Email"
 						name="email"
 						autoComplete="email"
-						autoFocus
 					/>
 					<TextField
 						margin="normal"
